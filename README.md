@@ -1,5 +1,5 @@
 # Delete_Expunge_eMails
-Program to bulk delete or expunge or purge email messages on a specified date rage at one go.
+Program to bulk delete or expunge or purge email messages on a specified date range at one go.
 
 This programme can be used to bulk delete or expunge email messages from a folder on a specified date range inputs.
 The programme is designed to work on any OS without worring to config or change any specific settings.
