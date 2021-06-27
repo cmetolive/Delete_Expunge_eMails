@@ -1,0 +1,57 @@
+Delete_Expunge_eMails version: 1.5
+==================================
+
+Description:
+------------
+
+This programme can be used to bulk delete or expunge email messages from a folder on a specified date range inputs.
+The programme is designed to work on any OS without worring to config or change any specific settings.
+The programme/script is developed using Python 3.9 however it would work on downline versions with little version specific cosmatic changes.
+No dependency modules or packages required.
+This programme is tested by author on Yahoo! and Gmail accounts by deleteing 5,000+ emails.
+No code changes required to use with Yahoo! or Gmail accounts - it is ready to use - just download and use, no changes required.
+
+To Run/Execute: 
+---------------
+1. Prerequisite: Application password of the eMail Account should be generated before running this script.
+   ------------- (Refer to respective service providers on generating application password for your email account.)
+2. Setting Up:
+   -----------
+	2.1. Copy all the below 3 files to a folder.
+			a. Expunge_eMails_v1.5.py - main programme/script file.
+			b. Expunge_eMails_Utilities.py - all utility functions.
+			c. Expunge_eMails_Constants.py - all config constant values.
+	2.2. By default "INBOX" of the email account is selected, if needed to change, look for "FOLDER_NAME" constant variable in 
+		 Expunge_eMails_Constants.py and update to desiered email folder name.
+	2.3. By default script will generate a execution/run time log file and logged into file specified in LOG_FILE_NAME_PREFIX paramete
+		 in Expunge_eMails_Constants.py - Log file name set to any desiered name here. The log file will be gereated at current working directory where Expunge_eMails_v1.5.py is executed.
+	2.4. Expunge_eMails_Constants.py contains all other messages used to display. These messages can be changed to desiered text.
+3. Script Execution: Run Expunge_eMails_v1.5.py file to start execution and the programme requires below credentials/data:
+   -----------------
+   The programme/script is capable of accepting command line input arugments/parameters. 
+   If not command line arugments/parameters passed it will prompt for the same.
+   
+   For Help: Python Expunge_eMails_v1.5.py --help
+   
+   Command Line Parameters:
+   ------------------------
+	a. eMail address: a valid email address.
+	b. eMail Password: enter application password (Refer: 1. Prerequisite above)
+	c. Start Date: Start Date to search in DD-MM-YYYY format only.
+	d. End Date: End Date in DD-MM-YYYY format only.
+	   NOTE: Add one day to the actual end date e.g.: to delete till 25-06-2021 then the end date should be 26-06-2021.
+   
+	Data Inputs: *[NOTE]: AT ANY DATA ENTRY PROMPT PRESS 'X' OR 'x' TO TERMINATE.
+	-----------------------------------------------------------------------------
+	3.1. Valid email address OR 'X'/'x' to terminate.
+	3.2. Enter application password (Refer: 1. Prerequisite) OR 'X'/'x' to terminate.
+	3.3. Start Date: Start Date must be in DD-MM-YYYY format only OR 'X'/'x' to terminate.
+	3.4. End Date: End Date must be in DD-MM-YYYY format only OR 'X'/'x' to terminate.
+		 NOTE: Add one day to the actual end date e.g.: to delete till 25-06-2021 then the end date should be 26-06-2021.
+	3.5. Programme/script will dispaly All Done messages on console once completed.
+
+Author/Developer Contacts:
+--------------------------
+Name			:	SS. KANAGAL
+eMail address	:	sskanagal@gmail.com / cmetolive@gmail.com
+GitHub license	: 	MIT.
